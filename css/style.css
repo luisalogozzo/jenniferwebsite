@@ -2766,6 +2766,7 @@ footer a:hover {
 /* FOOTER */
 
 .social-cnt {
+	cursor: pointer;
 	gap: 10px;
 	cursor: initial !important;
 }
