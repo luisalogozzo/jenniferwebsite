@@ -1919,7 +1919,7 @@ textarea:focus, input:focus, input[type]:focus {
 	padding-right: 20px;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 760px) {
 	.social-cnt.sticky{
 		flex-direction: column;	
 		top: 83%;
