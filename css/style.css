@@ -1779,8 +1779,7 @@ hr.inverse {
 }
 
 .bg-tema-alt {
-	background-color: rgba(245, 133, 152, 0.4);
-	/* background-color: rgba(200, 248, 197, 0.4) !important; */
+	background-color: rgba(245, 133, 152, 0.3);
 	color: #171717;
 }
 
@@ -1855,7 +1854,7 @@ hr.inverse {
 
 .btn-tema:hover, .btn-tema:focus, .btn-tema:active {
 	color: #434343!important;
-	background-color: #FAEBE0;
+	background-color: rgba(245, 133, 152, 0.2);
 	border-color: #FAEBE0;
 }
 
@@ -1916,7 +1915,16 @@ textarea:focus, input:focus, input[type]:focus {
 	z-index: 1000;
 	top: 87vh;
 	width: fit-content;
-	left: 87vw;
+	left: 100%;
+	padding-right: 20px;
+}
+
+@media only screen and (min-width: 760px) {
+	.social-cnt.sticky{
+		flex-direction: column;	
+		top: 83%;
+		padding-bottom: 20px;
+	}
 }
 
 .apertura__imgwrapper {
@@ -1986,7 +1994,7 @@ textarea:focus, input:focus, input[type]:focus {
 	bottom: 6.5rem;
 	left: -5.3vw;
 	z-index: 1;
-	background-color: rgba(245, 133, 152, 0.4);
+	background-color: rgba(245, 133, 152, 0.3);
 	mix-blend-mode: multiply;
 	transform-origin: 0 50%;
 	transform: translate3d(0, 0, 0) scaleX(0);
@@ -2002,7 +2010,7 @@ textarea:focus, input:focus, input[type]:focus {
 		right: 0;
 		bottom: 0;
 		left: -10.764vw;
-		background-color: rgba(245, 133, 152, 0.4);
+		background-color: rgba(245, 133, 152, 0.3);
 		mix-blend-mode: multiply;
 		color: #FFF;
 	}
