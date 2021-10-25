@@ -1950,7 +1950,7 @@ textarea:focus, input:focus, input[type]:focus {
 }
 @media only screen and (max-width: 768px) {
 	.apertura__content  {
-		margin-bottom: 0;
+		margin-bottom: 0 !important;
 	}
 	.apertura__imgwrapper {
 		padding-inline: 0;
