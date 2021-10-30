@@ -2575,7 +2575,7 @@ footer a:hover {
 .parallax {
 	background-image: url('../img/foto-lavoro.jpeg');
 	min-height: 400px;
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
