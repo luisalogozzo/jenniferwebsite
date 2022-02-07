@@ -13,25 +13,28 @@
     <title>Jennifer Lauri</title>
     
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Custom styles -->
     <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/toolslide.css" />
+		<link rel="stylesheet" href="css/shared.css" />
+		<link rel="stylesheet" href="css/keyframes.css" />
     <link href="css/style.css" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">					
   </head>
-  <body>
-		<div class="d-flex justify-content-start social-cnt sticky">
-			<a href="https://www.instagram.com/jenniferlauri_permanentmakeup/"><img style="width: 30px" src="img/instagram.svg" alt="instagram"></a>
+  <body onscroll="">
+		<div id="socialScroll" class="d-flex justify-content-start social-cnt sticky">
+			<a href="https://www.instagram.com/Jenniferlaurimakeup/"><img style="width: 30px" src="img/instagram.svg" alt="instagram"></a>
 			<a href="https://wa.me/3395684591"><img style="width: 30px" src="img/whatsapp.svg" alt="whatsapp"></a>
 			<a href="https://www.facebook.com/jenniferlauriphiartist"><img style="width: 30px" src="img/facebook.svg" alt="facebook"></a>	
 		</div>
 
-    <header class="">
+    <header>
       <nav id="mainNav" class="navbar fixed-top navbar-expand-lg navbar-light bg-rosa-alt">
-        <div class="container-fluid">
+        <div class="container-fluid p-0">
           <a href="" class="navbar-brand p-0">
             <img src="img/logod.svg" class="logo-big d-none d-sm-block" alt="Logo">
             <img style="width: 150px;" src="img/logod.svg" class="logo-smll d-xs-block d-sm-none" alt="Logo">
@@ -39,7 +42,7 @@
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-5">
                 <li class="nav-item active">
-									<div data-attr="apertura" class="nav-link font-weight-semibold pr-4" onclick="scrollElementIntoView(this)">
+									<div data-attr="apertura" class="nav-link font-weight-semibold pr-4" onclick="window.scrollTo(0, 0);">
 										<span class="fontAlt">Home</span>
 									</div>
                 </li>
@@ -57,76 +60,111 @@
 									<div data-attr="slider3d" class="nav-link font-weight-semibold pr-4" onclick="scrollElementIntoView(this)">
 										<span class="fontAlt">Portfolio</span>
 									</div>
-                </li>               
+                </li>
                 <li class="nav-item active">
 									<div data-attr="contacts" class="nav-link font-weight-semibold pr-4" onclick="scrollElementIntoView(this)">
 										<span class="fontAlt">Contatti</span>
 									</div>
-                </li>               
+                </li>
             </ul>
-
+						<div class="art-button art-button-light rounded desktop">
+							<a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano#booking=0">PRENOTA ORA</a>
+						</div>
           </div>
-          <div class="nav-link d-lg-none">
-            <button class="hamburger hamburger--spin hamb-trigger">
-              <div class="hamburger-box">
-                <div class="hamburger-inner"></div> 
-              </div>
-            </button>
-						<div class="hamburger-content bg-rosa-alt pt-5 pl-3 pr-5">
-							<ul class="list-unstyled fontAlt text-left px-md-4 pt-md-4">
-								<li class="py-1 effetto-nav-mob d-block">
-									<div data-attr="apertura" class="d-block" onclick="scrollElementIntoView(this)">
-										<span class="bi-dot em-size-100 align-middle mr-2"></span>
-										<span class="align-middle">Home</span>
-									</div>
-								</li>
-								<li class="py-1 effetto-nav-mob d-block">
-									<div data-attr="about" class="d-block" onclick="scrollElementIntoView(this)">
-										<span class="bi-dot em-size-100 align-middle mr-2"></span>
-										<span class="align-middle">About</span>
-									</div>
-								</li>
-								<li class="py-1 effetto-nav-mob d-block">
-									<div data-attr="servizi" class="d-block" onclick="scrollElementIntoView(this)">
-										<span class="bi-dot em-size-100 align-middle mr-2"></span>
-										<span class="align-middle">Servizi</span>
-									</div>
-								</li>
-								<li class="py-1 effetto-nav-mob d-block">
-									<div data-attr="slider3d" class="d-block" onclick="scrollElementIntoView(this)">
-										<span class="bi-dot em-size-100 align-middle mr-2"></span>
-										<span class="align-middle">Portfolio</span>
-									</div>
-								</li>
-								<li class="py-1 effetto-nav-mob d-block">
-									<div data-attr="contacts" class="d-block" onclick="scrollElementIntoView(this)">
-										<span class="bi-dot em-size-100 align-middle mr-2"></span>
-										<span class="align-middle">Contatti</span>
-									</div>
-								</li>
-							</ul>
-						</div>	
-        	</div>
 				</div>
       </nav>
     </header>
 
-<!-- verifica accesso contenuti -->
+		<div id="toolslide" class="toolslide closed">
+			<div class="ts-container">
+				<div class="ts-nav-container">
+					<div class="ts-nav-item" ts-target="first">
+						<button class="hamburger hamburger--spin hamb-trigger">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div> 
+              </div>
+            </button>
+					</div>
+				</div>
+				<div class="ts-content-container">
+					<div id="first" class="ts-content-item">
+						<div class="example-panel">
+							<img width="400px" src="img/JenniferLauri-logo-ok-PERMANENT.png" class="img-fluid d-block thumb-400 mx-auto mb-5" alt="Logo Footer">
+							<ul id="ul-panel">
+								<li class="nav-item active">
+									<div data-attr="apertura" class="nav-link" onclick="window.scrollTo(0, 0);">
+										<span class="fontAlt">Home</span>
+									</div>
+                </li>
+								<li class="nav-item active">
+									<div data-attr="about" class="nav-link" onclick="scrollElementIntoView(this)">
+										<span class="fontAlt">About</span>
+									</div>
+                </li>
+                <li class="nav-item active">
+									<div data-attr="servizi" class="nav-link" onclick="scrollElementIntoView(this)">
+										<span class="fontAlt">Servizi</span>
+									</div>
+                </li>
+                <li class="nav-item active">
+									<div data-attr="slider3d" class="nav-link" onclick="scrollElementIntoView(this)">
+										<span class="fontAlt">Portfolio</span>
+									</div>
+                </li>
+                <li class="nav-item active">
+									<div data-attr="contacts" class="nav-link" onclick="scrollElementIntoView(this)">
+										<span class="fontAlt">Contatti</span>
+									</div>
+                </li>
+							</ul>
+							
+							<a href="https://wa.me/393395684591">
+								<div class="d-flex justify-content-between align-items-center mb-2">
+									Prenota una consulenza gratuita online
+									<img width="13px" src="img/chevr-right.svg" alt=">">
+								</div>
+							</a>
+
+							<a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano#booking=0">
+								<div class="d-flex justify-content-between align-items-center">
+									Prenota un trattamento
+									<img width="13px" src="img/chevr-right.svg" alt=">">
+								</div>	
+							</a>
+
+							<!-- <a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano#booking=0">
+								<div class="d-flex justify-content-between align-items-center">
+									Seguimi su Facebook
+									<img width="13px" src="img/enter.svg" alt=">">
+								</div>	
+							</a>
+							<a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano#booking=0">
+								<div class="d-flex justify-content-between align-items-center">
+									Seguimi su Instagram
+									<img width="13px" src="img/enter.svg" alt=">">
+								</div>	
+							</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
     <!-- inizio render pagina home -->
         <!-- apertura -->
-        <section id="apertura" class="apertura apertura__alt ctn mt-navbar" data-component="Apertura">
+				<section class="apertura apertura__alt ctn mt-navbar is-ready is-revealed" data-component="Apertura">
           <div class="apertura__ctn">
             <div class="apertura__content">
               <div class="overlay-item overlay-item--center-xy d-lg-block">
-                <img src="img/JenniferLauri-logo-ok.png" class="img-title mx-auto" alt="Logo">
+                <img src="img/JenniferLauri-logo-ok-PERMANENT.png" class="img-title mx-auto" alt="Logo">
               </div>
-							<div class="overlay-item overlay-item--bottom-left d-none d-lg-block">
-							</div>
+             <div class="overlay-item overlay-item--bottom-left d-none d-lg-block">
+             </div>
             </div>
             <figure class="apertura__bg">
-              <div class="apertura__imgwrapper col-lg-10 p-0">
+              <div class="apertura__imgwrapper col-lg-10">
                 <div class="apertura__imgmask">
-                  <img src="img/foto1.jpeg" class="apertura__img" alt="">
+                  <img src="img/studio-img2.jpg" class="apertura__img" alt="">
                 </div>
               </div>
             </figure>
@@ -135,6 +173,27 @@
             </a>
           </div>
         </section>
+        <!-- <section id="apertura" class="apertura apertura__alt ctn mt-navbar" data-component="Apertura">
+          <div class="apertura__ctn">
+            <div class="apertura__content">
+              <div class="overlay-item overlay-item--center-xy d-lg-block">
+                <img src="img/JenniferLauri-logo-ok-PERMANENT.png" class="img-title mx-auto" alt="Logo">
+              </div>
+							<div class="overlay-item overlay-item--bottom-left d-none d-lg-block">
+							</div>
+            </div>
+            <figure class="apertura__bg">
+              <div class="apertura__imgwrapper col-lg-10 p-0">
+                <div class="apertura__imgmask">
+                  <img src="img/studio-img2.jpg" class="apertura__img" alt="">
+                </div>
+              </div>
+            </figure>
+            <a href="#start" class="continua scorrimento fontSans d-none d-lg-block">
+              <span class="bi bi-arrow-down indicatore"></span>
+            </a>
+          </div>
+        </section> -->
         <!-- fine apertura -->
 				<section id="start">
 					<img id="plant-bg" src="img/plant-bg.png" alt="">
@@ -142,31 +201,36 @@
 						<div class="row">
 							<div class="wow fadeInUp col-lg-6 col-sm-12 frase-wrapper">
 								<!-- <img id="border_floral" src="img/border_floral2.webp"> -->
-								<h1 class="h4 fontAlt font-weight-black text-center textHandWriting font-3rem">
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-								</h1>    
+								<div class="h4 fontAlt font-weight-black text-center textHandWriting font-3rem">
+									Stufa di perdere tempo la mattina per truccarti? 
+								</div>    
 							</div>
 							<div class="col-lg-5 col-sm-12 wow fadeInUp">
 								<div class="titoloAlt text-center my-4 my-lg-5">
 									<h1 class="fontCorsivo text-tema">
-										<img width="100%" src="img/logoc.svg" alt="">
+										<img width="100%" src="img/JenniferLauri-logo-ok-PERMANENT.png" alt="">
 									</h1>
 								</div>
 							</div>
 						</div>
           </div>
 				</section>
-			<section class="parallax">
+			<section id="parallax" class="parallax">
 			</section>
 
 			<section id="about">
 				<div>
 					<div class="container-fluid magazine bg-gradient mt-5">
 						<div class="row">
-							<div class="col-12 col-lg-8 zindex-1 wow fadeInLeft">
+							<!-- <div class="col-12 p-0x wow fadeInRight">
+								<div class="position-relative">
+									<img src="img/foto-jennifer.jpeg" alt="Microblading" class="img-fluid d-block">
+								</div>
+							</div> -->
+							<div class="col-12 zindex-1 wow fadeInLeft">
 								<div class="px-3 px-md-5 py-4 py-md-5 h-100">
 									<div class="row h-100">
-										<div class="col-12 col-lg-11 text-center my-auto">
+										<div class="col-md-8 col-sm-12 text-center my-auto">
 											<div class="titoloAlt text-center mb-4">
 												<h1 class="textHandWriting text-tema mt-4">
 													Jennifer Lauri
@@ -176,21 +240,19 @@
 												</h2>
 											</div>
 											<p class="fontSans em-size-100 text-center text-grigioscuro text-height-2">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, deserunt ducimus perspiciatis quo autem animi voluptas consectetur ab nam iusto voluptatum dolor voluptatibus exercitationem deleniti aliquid ipsam, modi delectus officiis?
+												Mi chiamo Jennifer Lauri sono nata a Milano il 16 dicembre 1991, i miei studi avevano come obbiettivo quello di portarmi altrove nel mondo del lavoro, ma la passione per il trucco sin da bambina quando ispirandomi a mia mamma passavo moltissimo tempo a guardare lei mentre si truccava per uscire, ha fatto capolino nella mia vita così che nel 2018 decisi di abbandonare il mio lavoro all’interno dell’azienda di famiglia e mi iscrissi ad uno dei diversi corsi di formazione in una delle più prestigiose Accademie a livello mondiale. Grazie alla mia determinazione nel voler far diventare quella passione un vero e proprio lavoro ottenni in breve tempo diverse qualifiche per svariate tecniche. Da lì a breve aprii con molto sacrificio il mio primissimo studio! Ebbene sì uno studio tutto mio, creato interamente con le mie mani. Un piccolo studio che racchiude parte di me in ogni piccolo dettaglio. Il primo anno tra gli studi accademici e l’apertura dello studio la fatica economica, fisica e mentale è stata notevole, ma ben presto ripagata da un immensa soddisfazione…la strada era quella giusta ed era solo l’inizio!
 											</p>
-											<br>
-											<p class="fontSans em-size-100 text-center text-grigioscuro text-height-2">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, deserunt ducimus perspiciatis quo autem animi voluptas consectetur ab nam iusto voluptatum dolor voluptatibus exercitationem deleniti aliquid ipsam, modi delectus officiis?
-											</p>
+										</div>
+										<div class="col-md-4 col-sm-12 text-center my-auto">
+											<img src="img/foto-jennifer.jpeg" alt="Microblading" class="framed-img img-fluid d-block rounded mb-3">
+											<!-- <img src="img/foto1.jpeg" alt="Microblading" class= d-block d-lg-none"> -->
+											<img id="wip" src="img/workinprogress.jpeg" alt="Microblading" class="framed-img img-fluid d-md-block d-lg-none rounded">
+
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-lg-3 order-first order-lg-last p-0x wow fadeInRight">
-								<div class="position-relative ml-n-10">
-									<img src="img/foto-jennifer.jpeg" alt="Microblading" class="img-fluid d-block rounded-xl-right rounded--top ml-lg-7">
-								</div>
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -233,10 +295,17 @@
 												</h2>
 											</div>
 											<p class="fontSans em-size-100 text-center text-grigioscuro text-height-2">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, deserunt ducimus perspiciatis quo autem animi voluptas consectetur ab nam iusto voluptatum dolor voluptatibus exercitationem deleniti aliquid ipsam, modi delectus officiis?
+												Il microblading è una tecnica di tatuaggio cosmetico, in cui viene utilizzato un piccolo strumento composto da minuscoli aghi, 
+												per aggiungere un pigmentosemipermanente alla pelle.
+												Viene tipicamente utilizzato sulle sopracciglia per creare, migliorare o rimodellarne l'aspetto, 
+												in termini di forma e colore.
+												Differisce dal trucco permanente perché ogni pelo viene disegnato a mano, utilizzando una lama che crea sottili tagli nella pelle, 
+												invece i tatuaggi delle sopracciglia vengono eseguiti con una macchina e un ago singolo.
+												La procedura deposita il pigmento nella regione superiore del derma, quindi si sbiadisce più rapidamente rispetto alle tecniche di tatuaggio tradizionali, 
+												che depositano il pigmento più in profondità.
 											</p>
 											<div class="mt-5">
-												<a class="btn btn-tema px-3 px-lg-5 py-3 rounded-lg">
+												<a href="https://wa.me/393395684591" class="btn btn-tema px-3 px-lg-5 py-3 rounded-lg">
 													<span class="em-size-90 text-truncate">Consulenza gratuita</span>
 												</a>
 											</div>
@@ -267,16 +336,21 @@
 													Jennifer Lauri
 												</h1>
 												<h2 class="h1 sovraimpressione font-weight-bold text-grigioscuro text-uppercase">
-													trucco semipermanente labbra
+													TATTOO FULL LIPS
 												</h2>
 											</div>
 											<p class="fontSans em-size-100 text-center mt-4 text-height-2">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facere voluptates fugiat ratione tempora, reiciendis aspernatur atque eveniet accusantium, a labore, eligendi ea rerum? Iure fuga laudantium minus aliquid eaque.
+												Il trucco permanente labbra è una tecnica di dermopigmentazionenata in America e che ha ormai preso piede in Europa, anche e soprattutto in Italia. 
+												Si esegue per definire il contorno labbra, correggere eventuali imperfezioni, conferire armonia ed equilibrio a labbra naturali, donare un effetto volumizzante e coprire cicatrici e macchie. 
+												Senza dimenticare che il trattamento stesso è alla moda e fa tendenza. Il tatuaggio labbra, come avrai dunque capito, non ha soltanto una forte valenza estetica, 
+												ma serve anche per correggere alcuni difetti. 
+												Per questo motivo è importante capire quale sia la tecnica migliore da scegliere! 
+												in passato era di moda tatuare solo il contorno delle labbra, adesso un trattamento molto apprezzato e’ il tatuaggio full lips, che ricopre quasi interamente la musica dondando il colore scelto a tutto il volume delle labbra!
 											</p>
 											<p class="fontSans em-size-100 text-center mt-4 text-height-2">
 											</p>
 											<div class="mt-5">
-												<a href="" class="btn btn-tema px-3 px-lg-5 py-3 rounded-lg">
+												<a href="https://wa.me/393395684591" class="btn btn-tema px-3 px-lg-5 py-3 rounded-lg">
 													<span class="em-size-90 text-truncate">Consulenza gratuita</span>
 												</a>
 											</div>
@@ -314,10 +388,13 @@
 												Un vero Istituto di Bellezza con personale qualificato e uno staff di professionisti, ognuno dei quali si occupa di un campo ben preciso.
 											</h3> -->
 											<p class="fontSans em-size-100 text-center mt-4 text-height-2">
-												Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illum, quam excepturi accusantium facere repellendus eaque? Totam, incidunt amet autem dicta in magni expedita non culpa facilis sapiente optio saepe.
+												Il tatuaggio eyeliner viene effettuato con il dermografo e ha come obbiettivo quello di sostituire in maniera quasi definitiva il famigerato eyeliner 
+												che viene disegnato ogni giorno sulle palpebre! 
+												Tutte voi sapete quanto sia difficile disegnarlo correttamente senza errori o sbavature, ma soprattutto quanto tempo ci porta via! 
+												Oggi potete dire addio a questo spreco di tempo regalandovi uno sguardo perfetto già appena sveglie!
 											</p>
 											<div class="mt-5">
-												<a href="" class="btn btn-tema px-3 px-lg-5 py-3 rounded-lg">
+												<a href="https://wa.me/393395684591" class="btn btn-tema px-3 px-lg-5 py-3 rounded-lg">
 													<span class="em-size-90 text-truncate">consulenza gratuita</span>
 												</a>
 											</div>
@@ -335,6 +412,51 @@
 						</div>
 					</div>
 				</div>	
+
+				<div class="bg-tema py-5">
+					<div class="container-fluid magazine">
+						<div class="row">
+							<div class="col-12 col-lg-8 wow fadeInRight">
+								<div class="bg-tema-alt px-3 px-lg-5 py-4 py-lg-5 h-100 rounded-xl rounded--bottom">
+									<div class="row h-100">
+										<div class="col-12 col-lg-11 offset-lg-1 text-center my-auto">
+											<div class="titoloAlt text-center mb-4">
+												<h1 class="textHandWriting text-tema mt-4">
+													Jennifer Lauri
+												</h1>
+												<h2 class="h1 sovraimpressione font-weight-bold text-grigioscuro text-uppercase">
+													POWDER BROWS
+												</h2>
+											</div>
+											<p class="fontSans em-size-100 text-center mt-4 text-height-2">
+												E' una tecnica abbastanza recente di trucco semipermanente, eseguita con il dermografo munito di ago attraverso il quale viene introdotto il colore nello strato più superficiale della pelle. 
+												Si procede disegnando dei piccoli puntini in quelle zone dove le sopracciglia sono più rade, sfruttando l’ombra creata dai peli già esistenti e riempiendo i buchi. 
+												Questa tecnica è conosciuta anche con il nome Powder Brows perché l’effetto finale è più sfumato e naturale rispetto a quello del microblading. 
+												Attualmente è la tecnica che preferisco e che consiglio all maggior parte delle clienti! Inoltre la tecnica powder è indicata per tutti quei tipi di pelle su cui invece è sconsigliato il microblading, 
+												come per esempio le pelli grasse o acneiche! 
+											</p>
+											<p class="fontSans em-size-100 text-center mt-4 text-height-2">
+											</p>
+											<div class="mt-5">
+												<a href="https://wa.me/393395684591" class="btn btn-tema px-3 px-lg-5 py-3 rounded-lg">
+													<span class="em-size-90 text-truncate">Consulenza gratuita</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-4 order-first order-lg-first zindex-1 wow fadeInLeft">
+								<div class="py-0 py-lg-5">
+									<div class="position-relative mr-n-5">
+										<img src="img/powderbrowns1.jpeg" alt="powder browns" class="img-fluid d-block rounded-xl rounded--top">         
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</section>
 
 			<section id="slider3d" class="bg-gradient pt-5">
@@ -389,14 +511,14 @@
 												<div class="art-description art-body-two-font">
 													<p>
 														<strong>Tel./Whatsapp</strong> <br>
-														<a href="https://wa.me/3395684591">+39 339 568 4591</a> <br>
+														<a href="https://wa.me/393395684591">+39 339 568 4591</a> <br>
 														<strong>Email</strong> 
 														<a href="mailto:jennierlauriphiartist@gmail.com">
 														jennierlauriphiartist@gmail.com</a> <br>
 														<strong>Facebook</strong>
 														<a href="https://www.facebook.com/jenniferlauriphiartist">jenniferlauriphiartist</a> <br>
 														<strong>Instagram</strong>
-														<a href="https://www.instagram.com/jenniferlauri_permanentmakeup/">jenniferlauri_phibrows</a> <br>
+														<a href="https://www.instagram.com/Jenniferlaurimakeup">Jenniferlaurimakeup</a> <br>
 													</p>
 												</div>
 											</div>
@@ -430,7 +552,7 @@
 									</div>
 								</div>
 								<div class="mb-5 art-widget-button art--aliment-center art--aliment-tablet- art--aliment-mobile-"> 
-									<a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano#booking=0" class="art-button art-button-light">
+									<a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano#booking=0" class="art-button art-button-light rounded">
 										Prenota un appuntamento
 									</a>
 								</div>
@@ -461,7 +583,7 @@
         <!-- <img src="https://www.denisebeautystudio.it/wui/C17/img/client/logo-full.svg" class="img-fluid d-block thumb-400 mx-auto mb-4" alt="Logo Full"> -->
         <h6 class="">
 					<span class="bi bi-file-earmark-text em-size-140 text-nero align-middle mr-1"></span>
-					<a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano#">
+					<a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano/widget">
 						<span class="xfontAlt em-size-90 font-weight-bold text-nero text-uppercase sottolineato tema align-middle">
 							Visualizza il listino prezzi
 						</span>
@@ -486,9 +608,9 @@
     </div>
     <div class="row">
       <div class="col-12 col-lg-4">
-				<img width="400px" src="img/logoc.svg" class="img-fluid d-block thumb-400 mx-auto mb-5" alt="Logo Footer">
+				<img width="400px" src="img/JenniferLauri-logo-ok-PERMANENT.png" class="img-fluid d-block thumb-400 mx-auto mb-5" alt="Logo Footer">
       </div>
-      <div class="col-12 col-sm-6 col-lg-4 text-center text-lg-left">
+      <div class="col-12 col-sm-6 col-lg-4 text-center">
         <h3 class="h5 font-weight-bold mb-3">
           Sede Legale
         </h3>
@@ -507,7 +629,7 @@
           </p>
         </address>
       </div>
-      <div class="col-12 col-sm-6 col-lg-4 text-center text-lg-left">
+      <div class="col-12 col-sm-6 col-lg-4 text-center">
         <h3 class="h5 font-weight-bold mb-3">
           Centro Estetico
         </h3>
@@ -549,6 +671,7 @@
 <!-- JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 <script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/toolslide.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/main.js"></script>
 </body>

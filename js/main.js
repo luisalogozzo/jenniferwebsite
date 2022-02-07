@@ -5,6 +5,14 @@ wow = new WOW({
 wow.init();
 
 
+if (history.scrollRestoration) {
+	history.scrollRestoration = 'manual';
+} else {
+	window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+	}
+}
+
 // main main main main main main main main main main main main main main main
 
 // animazione CS
@@ -70,6 +78,9 @@ function scrollElementIntoView(el) {
 	const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
 	window.scrollTo({top: y, behavior: 'smooth'});
+	toolslide.close();
+	$('#toolslide .hamburger').removeClass('is-active')
+	$('body').removeClass('stopScroll')
 }
 
 let xPos = 0;
