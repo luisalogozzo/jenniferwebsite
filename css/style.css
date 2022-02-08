@@ -256,32 +256,42 @@ button.close {
 .social-cnt.sticky {
 	position: sticky;
 	z-index: 1000;
-	top: 87vh;
+	top: 93vh;
 	width: fit-content;
 	left: 100%;
 	padding-right: 20px;
-	transition: transform .5s ease-in-out;
+	/* transition: transform .5s ease-in-out; */
 }
 
 .social-cnt.sticky.mob img {
-	transition: transform .5s ease-in-out;
+	/* transition: transform .5s ease-in-out; */
 }
 
-.social-cnt.sticky.mob {
-	/* top: 100%;
-	flex-direction: row !important; */
-	transform: translate(-55px, 80px) rotate(90deg);
-}
-
-.social-cnt.sticky.mob img {
-	transform: rotate(-90deg);
-}
 
 @media only screen and (max-width: 760px) {
 	.social-cnt.sticky {
 		flex-direction: column;
 		top: 81%;
 		padding-bottom: 20px;
+	}
+	.social-cnt.sticky.mob {
+		/* transform: translate(-55px, 45px) rotate(90deg); */
+		transform: translate(-105px, 45px) rotate(90deg);
+		position: fixed;
+		animation: fade 1s;
+	}
+
+	@keyframes fade {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	
+	.social-cnt.sticky.mob img {
+		transform: rotate(-90deg);
 	}
 }
 

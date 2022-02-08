@@ -26,7 +26,7 @@ body {
 }
 
 body.stopScroll {
-	height: 100vh;
+	height: 100%;
 	overflow: hidden;
 }
 
@@ -652,6 +652,13 @@ textarea.form-control {
 	text-decoration: none;
 }
 
+#first .link-hover {
+	transition: color .2s ease;
+}
+#first .link-hover:hover {
+	color: white;
+}
+
 .navbar {
 	position: relative;
 	display: -ms-flexbox;
@@ -689,9 +696,6 @@ textarea.form-control {
 .navbar-brand:hover, .navbar-brand:focus {
 	text-decoration: none;
 }
-
-
-
 
 .navbar-nav {
 	display: -ms-flexbox;
@@ -1471,7 +1475,7 @@ hr.inverse {
 
 .textHandWriting {
 	font-family: 'Allison', cursive;
-	font-size: 3rem !important;
+	font-size: clamp(44px, 5.4vw, 80px) !important;
 	padding-inline: 20px;
 }
 
@@ -1527,6 +1531,13 @@ hr.inverse {
 	font-weight: 500;
 	text-transform: uppercase;
 	cursor: pointer;
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 991px) {
+	.bg-rosa-alt div:not(.btn):not(.dropdown-item) {
+		margin-right: 18px;
+	}
 }
 
 .btn {
