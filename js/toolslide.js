@@ -259,12 +259,14 @@
 				this.open();
 				$('body').addClass('stopScroll')
 				$('#socialScroll').addClass('mob')
+				$('#socialScroll').removeClass('animation')
 
 			}
 			else if (this.isActive(event.currentTarget) && this.config.closeable) {
 				this.close();
 				$('body').removeClass('stopScroll')
 				$('#socialScroll').removeClass('mob')
+				$('#socialScroll').addClass('animation')
 			}
 
 			this.setActiveById(event.currentTarget.getAttribute("ts-target"));
@@ -290,6 +292,7 @@
 		onToggleButtonClick: function (event) {
 			if (!this.isOpen()) {
 				this.open();
+				window.scrollTo(0, 0)
 				$('body').addClass('stopScroll')
 			}
 			else {

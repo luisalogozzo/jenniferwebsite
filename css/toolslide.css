@@ -131,7 +131,7 @@ body .ts-nav-container {
 	border-left: 1px solid rgba(255, 255, 255, 0.7);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 668px) {
 	#toolslide {
 		width: 100% !important;
 	}

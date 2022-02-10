@@ -72,8 +72,8 @@ $(document).ready(function() {
 
 });
 
-function scrollElementIntoView(el) {
-	const yOffset = -30; 
+function scrollElementIntoView(el, yOffsetNum) {
+	const yOffset = yOffsetNum; 
 	const element = document.getElementById($(el).attr("data-attr"));
 	const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 

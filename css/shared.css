@@ -866,7 +866,7 @@ textarea.form-control {
 	border-radius: 0.3rem !important;
 }
 
-.d-none {
+/* .d-none {
 	display: none !important;
 }
 
@@ -908,7 +908,7 @@ textarea.form-control {
 	.d-xl-block {
 		display: block !important;
 	}
-}
+} */
 
 .align-items-end {
 	-ms-flex-align: end !important;

@@ -25,11 +25,11 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">					
   </head>
-  <body onscroll="">
+  <body id="body"">
 		<div id="socialScroll" class="d-flex justify-content-start social-cnt sticky">
-			<a href="https://www.instagram.com/Jenniferlaurimakeup/"><img style="width: 30px" src="img/instagram.svg" alt="instagram"></a>
-			<a href="https://wa.me/3395684591"><img style="width: 30px" src="img/whatsapp.svg" alt="whatsapp"></a>
-			<a href="https://www.facebook.com/jenniferlauriphiartist"><img style="width: 30px" src="img/facebook.svg" alt="facebook"></a>	
+			<a href="https://www.instagram.com/Jenniferlaurimakeup/" target="_blank"><img style="width: 30px" src="img/instagram.svg" alt="instagram"></a>
+			<a href="https://wa.me/3395684591" target="_blank"><img style="width: 30px" src="img/whatsapp.svg" alt="whatsapp"></a>
+			<a href="https://www.facebook.com/jenniferlauriphiartist" target="_blank"><img style="width: 30px" src="img/facebook.svg" alt="facebook"></a>	
 		</div>
 
     <header>
@@ -42,34 +42,34 @@
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-5">
                 <li class="nav-item active">
-									<div data-attr="apertura" class="nav-link font-weight-semibold pr-4" onclick="window.scrollTo(0, 0);">
+									<div data-attr="body" class="nav-link font-weight-semibold pr-4" onclick="scrollElementIntoView(this, 0)">
 										<span class="fontAlt">Home</span>
 									</div>
                 </li>
 								<li class="nav-item active">
-									<div data-attr="about" class="nav-link font-weight-semibold pr-4" onclick="scrollElementIntoView(this)">
+									<div data-attr="about" class="nav-link font-weight-semibold pr-4" onclick="scrollElementIntoView(this, -80)">
 										<span class="fontAlt">About</span>
 									</div>
                 </li>
                 <li class="nav-item active">
-									<div data-attr="servizi" class="nav-link font-weight-semibold pr-4" onclick="scrollElementIntoView(this)">
+									<div data-attr="servizi" class="nav-link font-weight-semibold pr-4" onclick="scrollElementIntoView(this, -70)">
 										<span class="fontAlt">Servizi</span>
 									</div>
                 </li>
                 <li class="nav-item active">
-									<div data-attr="slider3d" class="nav-link font-weight-semibold pr-4" onclick="scrollElementIntoView(this)">
+									<div data-attr="slider3d" class="nav-link font-weight-semibold pr-4" onclick="scrollElementIntoView(this, -90)">
 										<span class="fontAlt">Portfolio</span>
 									</div>
                 </li>
                 <li class="nav-item active">
-									<div data-attr="contacts" class="nav-link font-weight-semibold pr-4" onclick="scrollElementIntoView(this)">
+									<div data-attr="contacts" class="nav-link font-weight-semibold pr-4" onclick="scrollElementIntoView(this, -70)">
 										<span class="fontAlt">Contatti</span>
 									</div>
                 </li>
             </ul>
           </div>
 					<div class="art-button art-button-light d-none d-sm-block">
-						<a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano#booking=0">PRENOTA ORA</a>
+						<a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano#booking=0" target="_blank">PRENOTA ORA</a>
 					</div>
 				</div>
       </nav>
@@ -92,40 +92,40 @@
 							<img width="400px" src="img/JenniferLauri-logo-ok-PERMANENT.png" class="img-fluid d-block thumb-400 mx-auto mb-5" alt="Logo Footer">
 							<ul id="ul-panel">
 								<li class="nav-item active">
-									<div data-attr="apertura" class="nav-link" onclick="window.scrollTo(0, 0);">
+									<div data-attr="body" class="nav-link" onclick="scrollElementIntoView(this, 0);">
 										<span class="fontAlt">Home</span>
 									</div>
                 </li>
 								<li class="nav-item active">
-									<div data-attr="about" class="nav-link" onclick="scrollElementIntoView(this)">
+									<div data-attr="about" class="nav-link" onclick="scrollElementIntoView(this, -80)">
 										<span class="fontAlt">About</span>
 									</div>
                 </li>
                 <li class="nav-item active">
-									<div data-attr="servizi" class="nav-link" onclick="scrollElementIntoView(this)">
+									<div data-attr="servizi" class="nav-link" onclick="scrollElementIntoView(this, -70)">
 										<span class="fontAlt">Servizi</span>
 									</div>
                 </li>
                 <li class="nav-item active">
-									<div data-attr="slider3d" class="nav-link" onclick="scrollElementIntoView(this)">
+									<div data-attr="slider3d" class="nav-link" onclick="scrollElementIntoView(this, -90)">
 										<span class="fontAlt">Portfolio</span>
 									</div>
                 </li>
                 <li class="nav-item active">
-									<div data-attr="contacts" class="nav-link" onclick="scrollElementIntoView(this)">
+									<div data-attr="contacts" class="nav-link" onclick="scrollElementIntoView(this, -70)">
 										<span class="fontAlt">Contatti</span>
 									</div>
                 </li>
 							</ul>
 							
 							<a href="https://wa.me/393395684591">
-								<div class="d-flex justify-content-between align-items-center mb-2 link-hover">
+								<div class="d-flex justify-content-between align-items-center mb-2 link-hover" target="_blank">
 									Prenota una consulenza gratuita online
 									<img width="13px" src="img/chevr-right.svg" alt=">">
 								</div>
 							</a>
 
-							<a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano#booking=0">
+							<a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano#booking=0" target="_blank">
 								<div class="d-flex justify-content-between align-items-center link-hover">
 									Prenota un trattamento
 									<img width="13px" src="img/chevr-right.svg" alt=">">
@@ -143,7 +143,8 @@
           <div class="apertura__ctn">
             <div class="apertura__content">
               <div class="overlay-item overlay-item--center-xy d-lg-block">
-                <img src="img/JenniferLauri-logo-ok-PERMANENT.png" class="img-title mx-auto text" alt="Logo">
+                <img src="img/JenniferLauri-logo-ok-PERMANENT.png" class="img-title mx-auto text d-none d-sm-block" alt="Logo">
+                <img src="img/JenniferLauri-logo-mobile.png" class="img-title mx-auto text d-sm-none d-xs-block" alt="Logo">
                 <img src="img/shape.png" class="shape img-title mx-auto" alt="Logo">
               </div>
              <div class="overlay-item overlay-item--bottom-left d-none d-lg-block">
@@ -515,7 +516,7 @@
 									</div>
 								</div>
 								<div class="mb-5 art-widget-button art--aliment-center art--aliment-tablet- art--aliment-mobile-"> 
-									<a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano#booking=0" class="art-button art-button-light">
+									<a href="https://www.uala.it/permanent-make-up-di-jennifer-lauri_via-lodi-5-20077-melegnano#booking=0" target="_blank" class="art-button art-button-light">
 										Prenota un appuntamento
 									</a>
 								</div>
@@ -562,9 +563,9 @@
     <div class="row">
       <div class="col-12">
 				<div class="d-flex justify-content-center social-cnt">
-					<a href="https://www.instagram.com/Jenniferlaurimakeup"><img style="width: 20px;" src="img/instagram.svg" alt="instagram"></a>
-					<a href="https://wa.me/3395684591"><img style="width: 20px;" src="img/whatsapp.svg" alt="whatsapp"></a>
-					<a href="https://www.facebook.com/jenniferlauriphiartist"><img style="width: 20px;" src="img/facebook.svg" alt="facebook"></a>	
+					<a href="https://www.instagram.com/Jenniferlaurimakeup" target="_blank"><img style="width: 20px;" src="img/instagram.svg" alt="instagram"></a>
+					<a href="https://wa.me/3395684591" target="_blank"><img style="width: 20px;" src="img/whatsapp.svg" alt="whatsapp"></a>
+					<a href="https://www.facebook.com/jenniferlauriphiartist" target="_blank"><img style="width: 20px;" src="img/facebook.svg" alt="facebook"></a>	
 				</div>
         <hr class="inverse my-5">
       </div>
@@ -585,16 +586,13 @@
             20077 Melegnano (MI)
           </p>
           <p class="my-2">
-            Partita IVA: ???
-          </p>
-          <p class="my-2">
-            REA: ???
+            Partita IVA: 10962240965
           </p>
         </address>
       </div>
       <div class="col-12 col-sm-6 col-lg-4 text-center">
         <h3 class="h5 font-weight-bold mb-3">
-          Centro Estetico
+          Beauty Studio
         </h3>
         <address>
 					<p class="my-2">
@@ -620,7 +618,7 @@
           <!-- <li class="list-inline-item em-size-90 my-2">
             
             <a href="/it/pagine/92B1228A-0B7C-11EA-AC01-C9B840F04A91,A25FAE2E-5A3F-11EA-B75A-404100293F3D,4B864A10-5F9C-11EA-9F14-00FEF8CCA495/" target="_self">
-              <span class="bi bi-circle-fill em-size-50"></span>
+              <span class="bi bi-circle-fill em-size-70"></span>
               <span class="align-middle">Cookie Policy</span>
             </a>
             
