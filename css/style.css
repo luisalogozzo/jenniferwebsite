@@ -801,12 +801,12 @@ button.close {
 }
 
 #slider3d-sec {
-	height: 730px;
+	/* height: 900px; */
 }
 
 #slider3d {
 	position: relative;
-	height: 800px;
+	height: 600px;
 	overflow: hidden;
 }
 
@@ -828,7 +828,7 @@ button.close {
 }
 
 .stage {
-	margin-top: -12vw;
+	/* margin-top: -12vw; */
 	overflow: hidden;
 }
 
@@ -846,19 +846,15 @@ button.close {
 }
 
 @media only screen and (max-width: 576px) {
-	#slider3d-sec {
+	/* #slider3d-sec {
 		height: 700px;
-	}
+	} */
 
 	.stage {
-		margin-top: -28vw;
+		/* margin-top: -28vw; */
 	}
-
-	#slider3d {
-		height: 700px;
-	}
-
 }
+
 
 
 /* CONTATTI */
